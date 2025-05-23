@@ -1,1 +1,1 @@
-web: npm config set scripts-prepend-node-path true && npm install --no-package-lock && npm run build -- --skip-husky && npm run serve:ssr:sign-translate
+web: cp package.json.render package.json && npm install --no-package-lock && npm run build && npm run serve:ssr:sign-translate
