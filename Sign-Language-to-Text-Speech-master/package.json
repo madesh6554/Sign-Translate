@@ -2,6 +2,7 @@
   "name": "@sign/translate",
   "version": "0.0.3",
   "scripts": {
+    "preinstall": "npm install -g @angular/cli",
     "build": "ng build --configuration=production --base-href=/",
     "serve:ssr:sign-translate": "node dist/sign-translate/server/server.mjs"
   },
