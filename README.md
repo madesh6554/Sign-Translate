@@ -1,4 +1,5 @@
-# Sign Language Translation
+<<<<<<< HEAD
+# Sign-Translate
 
 ## Overview
 Sign Language Translation is an AI-powered application that converts sign language gestures into text and speech. The application uses computer vision and machine learning to detect and interpret sign language gestures in real-time.
@@ -46,3 +47,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details. 
+=======
+# Sign-Translate
+>>>>>>> 01f9f2bd5621b97bff35b70dc29a38381a1f646c
