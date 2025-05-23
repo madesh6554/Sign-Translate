@@ -1,1 +1,1 @@
-web: cp package.json.render package.json && npm install -g @angular/cli && npm install --no-package-lock && npm install --save-dev @angular-devkit/build-angular && npm run build && npm run serve:ssr:sign-translate
+web: npm install --no-package-lock && npm run build --skip-husky && npm run serve:ssr:sign-translate
