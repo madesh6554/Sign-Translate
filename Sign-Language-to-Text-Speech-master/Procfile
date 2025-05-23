@@ -1,1 +1,1 @@
-web: npm install -g @angular/cli && npm install --no-package-lock && npx ng build --configuration=production --base-href=/ && npx node dist/sign-translate/server/server.mjs
+web: cp package.json.render package.json && npm install --no-package-lock && npm run build && npm run serve:ssr:sign-translate
