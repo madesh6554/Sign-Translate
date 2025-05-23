@@ -2,37 +2,12 @@
   "name": "@sign/translate",
   "version": "0.0.3",
   "scripts": {
-    "ng": "ng",
-    "lint": "NODE_OPTIONS=--max_old_space_size=16384 ng lint",
-    "start": "ng serve --host 0.0.0.0",
     "build": "ng build --configuration=production --base-href=/",
-    "build:stats": "ng build --stats-json",
-    "analyze": "webpack-bundle-analyzer dist/sign-translate/browser/stats.json",
-    "pwa:assets": "pwa-asset-generator src/assets/icons/logo.svg src/assets/icons/generated/ -i src/index.html -m src/manifest.webmanifest --background white --favicon --mstile && pwa-asset-generator src/assets/icons/logo-dark.svg --dark-mode src/assets/icons/generated/ -i src/index.html --background black --splash-only",
-    "capacitor:assets": "capacitor-assets generate --verbose --ios --android --assetPath src/assets/icons --iconBackgroundColor=white --iconBackgroundColorDark=black --splashBackgroundColor=white --splashBackgroundColorDark=black --logoSplashTargetWidth=768",
-    "test": "ng test --code-coverage",
-    "test:chrome": "ng test --browsers=Chrome --code-coverage",
-    "test:firefox": "ng test --browsers=Firefox --code-coverage",
-    "test:ci": "ng test --browsers=ChromeHeadless,FirefoxHeadless --watch=false --code-coverage",
-    "deploy": "firebase deploy --only=hosting",
-    "mobile:sync": "tsx tools/mobile/sync.ts",
-    "mobile:metadata": "tsx tools/mobile/metadata/metadata.ts",
-    "prepare:husky": "node -e \"require('fs').cpSync('node_modules/@sign-mt/configuration/.husky/', '.husky/', {recursive: true})\"",
-    "prepare": "husky install && npm run prepare:husky",
-    "test:workflow": "act --container-architecture linux/amd64 --artifact-server-path /tmp/artifacts -W .github/workflows/client.yml",
-    "generate:terms": "marked -i LICENSE.md -o src/app/pages/landing/terms/terms.component.html",
-    "generate:sitemap": "node tools/sitemap-generator.js",
-    "generate:licenses": "npm-license-crawler --json dist/sign-translate/browser/licenses.json --onlyDirectDependencies --exclude ios --exclude android --exclude dist --exclude functions",
-    "generate:docs": "cd docs && npm run docs:build && mv .vitepress/dist ../dist/sign-translate/browser/docs",
-    "build:full": "npm run generate:terms && npm run build && npm run generate:sitemap && npm run generate:licenses && npm run generate:docs",
     "serve:ssr:sign-translate": "node dist/sign-translate/server/server.mjs"
   },
   "engines": {
     "node": ">=18",
     "npm": ">=9"
-  },
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
   },
   "private": true,
   "dependencies": {
