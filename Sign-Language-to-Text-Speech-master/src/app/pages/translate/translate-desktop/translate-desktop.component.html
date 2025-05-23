@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <button class="ion-button" style="--background: #7C3AED; --color: white; --border-radius: 50px; --padding-start: 16px; --padding-end: 16px; --padding-top: 10px; --padding-bottom: 10px; border: none;" (click)="navigateToHome()">
+        <ion-icon name="home" style="margin-right: 12px;"></ion-icon>
+        <span>Home</span>
+      </button>
+      <app-logo></app-logo>
+    </ion-buttons>
+    <ion-title>{{ 'translate.title' | transloco }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <app-language-selectors></app-language-selectors>
+    
+    <div class="translation-container">
+      <app-spoken-to-signed></app-spoken-to-signed>
+    </div>
+  </div>
+</ion-content>
