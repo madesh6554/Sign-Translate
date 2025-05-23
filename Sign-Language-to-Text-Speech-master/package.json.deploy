@@ -1,0 +1,26 @@
+{
+  "name": "@sign/translate",
+  "version": "0.0.3",
+  "scripts": {
+    "build": "ng build --configuration=production --base-href=/",
+    "serve:ssr:sign-translate": "node dist/sign-translate/server/server.mjs"
+  },
+  "dependencies": {
+    "@angular/animations": "19.2.4",
+    "@angular/cdk": "19.2.7",
+    "@angular/common": "19.2.4",
+    "@angular/compiler": "19.2.4",
+    "@angular/core": "19.2.4",
+    "@angular/forms": "19.2.4",
+    "@angular/material": "19.2.7",
+    "@angular/platform-browser": "19.2.4",
+    "@angular/platform-browser-dynamic": "19.2.4",
+    "@angular/platform-server": "19.2.4",
+    "@angular/router": "19.2.4",
+    "@angular/service-worker": "19.2.4",
+    "@angular/ssr": "19.2.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
