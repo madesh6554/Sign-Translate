@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: sign-translate
+    env: node
+    buildCommand: cd Sign-Language-to-Text-Speech-master && npm install && npm run build
+    staticPublishPath: Sign-Language-to-Text-Speech-master/dist/sign-translate/browser
+    envVars:
+      - key: NODE_VERSION
+        value: 18.17.0 

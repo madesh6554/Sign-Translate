@@ -2,8 +2,7 @@
   "name": "@sign/translate",
   "version": "0.0.3",
   "scripts": {
-    "preinstall": "npm install -g @angular/cli",
-    "build": "ng build --configuration=production --base-href=/",
+    "build": "node ./node_modules/@angular/cli/bin/ng build --configuration=production --base-href=/",
     "serve:ssr:sign-translate": "node dist/sign-translate/server/server.mjs"
   },
   "engines": {
@@ -14,6 +13,7 @@
   "dependencies": {
     "@angular/animations": "19.2.4",
     "@angular/cdk": "19.2.7",
+    "@angular/cli": "19.2.5",
     "@angular/common": "19.2.4",
     "@angular/compiler": "19.2.4",
     "@angular/core": "19.2.4",
@@ -90,7 +90,6 @@
     "@angular-eslint/eslint-plugin-template": "19.3.0",
     "@angular-eslint/schematics": "19.3.0",
     "@angular-eslint/template-parser": "19.3.0",
-    "@angular/cli": "19.2.5",
     "@angular/compiler-cli": "19.2.4",
     "@capacitor/assets": "3.0.5",
     "@capacitor/cli": "7.2.0",

@@ -6,7 +6,7 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-app = Flask(__name__, static_folder='Sign-Language-to-Text-Speech-master/dist/sign-translate')
+app = Flask(__name__, static_folder='Sign-Language-to-Text-Speech-master/dist/sign-translate/browser')
 
 @app.route('/')
 def serve_angular():
